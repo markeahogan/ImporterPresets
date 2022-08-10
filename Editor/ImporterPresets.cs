@@ -127,6 +127,11 @@ namespace PopupAsylum.ImporterPresets
                 do if (TryGetDefaultPreset(importer, importerDirectory, out var defaultPreset))
                     {
                         if (defaultPreset == preset) preset.ApplyTo(importer);
+                        if (defaultPreset == preset)
+                        {
+                            preset.ApplyTo(importer);
+                            importer.SaveAndReimport();
+                        }
                         break;
                     }
                 while (GetParentDirectory(ref importerDirectory)); // iterate up the folders till we reach 'Assets'

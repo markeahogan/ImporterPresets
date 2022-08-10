@@ -1,7 +1,7 @@
 {
   "name": "com.popupasylum.importerpresets",
   "displayName": "Importer Presets",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "unity": "2019.1",
   "description": "Uses Presets to apply default settings to Asset Importers. Particularly useful for specifying that a folder will contain Sprites.",
   "keywords": [
